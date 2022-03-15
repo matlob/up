@@ -43,11 +43,12 @@ def idup(message):
                 chido = str(requests.get(url).text)
                 if 'coins":"' in chido:
                     coin=str(chido.split('coins":"')[1])
-                    coins=str(chido.split('"')[0])
-                    bot.send_message(message.chat.id, text=f"New ID ✅\nID : {userid} 🆔\nCoins : {coins} 🪙",parse_mode="markdown")
+                    coins=str(coin.split('"')[0])
+                    bot.send_message(message.chat.id, text=f"New ID ✅\nID : {userid} 🆔\nCoins : {coins} ",parse_mode="markdown")
                     true_ += 1
                 else:
 	                  false_ += 1
+	                  
             except:
                 pass
             mees = types.InlineKeyboardMarkup(row_width=1)
