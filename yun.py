@@ -2,7 +2,7 @@ import requests
 import telebot
 import random
 from telebot import types
-token = "5201222207:AAENT153LA1HTZYIiqaQD-S91vuwpHSCCws"
+token = "5204752669:AAHK_yQANpoTtpXupiPA_JAhjgzhpHKi6QU"
 bot = telebot.TeleBot(token)
 call  = types.InlineKeyboardButton(text = "- START", callback_data = 'stri')
 dev  = types.InlineKeyboardButton(text = "- Dev 🧑‍💻", url = 'https://t.me/X_DevR')
